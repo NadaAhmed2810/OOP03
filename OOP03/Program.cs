@@ -1,4 +1,7 @@
-﻿namespace OOP03 
+﻿using OOP03.Operators_Overloading;
+
+
+namespace OOP03 
 {
     internal class Program
     {
@@ -42,7 +45,16 @@
 
             #endregion
 
-
+            Complex C1 = new Complex(){ Real=3,Imag=4};
+            Complex C2 = new Complex() { Real =6 , Imag = 8};
+            Complex C3=default;//null
+            C3 = C1 + C2;
+            C2 += C1;
+            Complex C4 = C1 + C2 + C3;
+            Console.WriteLine($"C1:{C1}");
+            Console.WriteLine($"C2:{C2}");
+            Console.WriteLine("---------");
+            Console.WriteLine($"C3:{C3}");
         }
     }
 }
