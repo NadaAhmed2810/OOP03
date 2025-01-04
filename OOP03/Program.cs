@@ -1,4 +1,5 @@
 ﻿using OOP03.Operators_Overloading;
+using System;
 
 
 namespace OOP03 
@@ -45,8 +46,8 @@ namespace OOP03
 
             #endregion
 
-            Complex C1 = new Complex(){ Real=3,Imag=4};
-            Complex C2 = new Complex() { Real =6 , Imag = 8};
+            Complex C1 = new Complex(){ Real=6,Imag=4};
+            Complex C2 = new Complex() { Real =6 , Imag =4 };
 
             #region Binary Operator
             //Complex C3=default;//null
@@ -59,10 +60,26 @@ namespace OOP03
             //Console.WriteLine($"C3:{C3}"); 
             #endregion
             #region Unary Operator
-            Console.WriteLine($"Before:{C1}");
-            Complex C3 = C1++;
-            Console.WriteLine($"After:{C1}");
-            Console.WriteLine($"C3:{C3}");
+            //Console.WriteLine($"Before:{C1}");
+            //Complex C3 = C1++;
+            //Console.WriteLine($"After:{C1}");
+            //Console.WriteLine($"C3:{C3}");
+            #endregion
+            #region Compersion Operator
+            //if (C1 > C2)
+            //{
+            //    Console.WriteLine("C1 is Greater Than C2");
+            //}
+            //else if (C1 < C2)
+            //{
+            //    Console.WriteLine("C1 is Less Than  C2");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("C1 is Equal  C2");
+            //}
+                 
+            
             #endregion
         }
     }

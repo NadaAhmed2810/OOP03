@@ -57,7 +57,28 @@ namespace OOP03.Operators_Overloading
         }
 
         #endregion
+        #region Compersion Operator
+        public static bool operator>(Complex Left ,Complex Right)
+            {
+            if ((Left?.Real ?? 0) == (Right?.Real ?? 0))
+            {
+                return (Left?.Imag ?? 0) > (Right?.Imag ?? 0);
+            }
 
+            return (Left?.Real ?? 0) > (Right?.Real ?? 0);
+
+            }
+        public static bool operator <(Complex Left, Complex Right)
+        {
+            if ((Left?.Real ?? 0) == (Right?.Real ?? 0))
+            {
+                return (Left?.Imag ?? 0) < (Right?.Imag ?? 0);
+            }
+
+            return (Left?.Real ?? 0) < (Right?.Real ?? 0);
+
+        }
+        #endregion
         #region Methods
         public override string ToString()
         {
