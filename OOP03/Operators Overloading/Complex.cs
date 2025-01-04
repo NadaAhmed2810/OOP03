@@ -79,6 +79,16 @@ namespace OOP03.Operators_Overloading
 
         }
         #endregion
+        #region Casting Operator Overloading
+        public static /*int*/ explicit operator int(Complex C)
+        {
+            return C?.Real??0;
+        }
+        public static  implicit operator string(Complex C)
+        {
+            return C?.ToString()??"";
+        }
+        #endregion
         #region Methods
         public override string ToString()
         {

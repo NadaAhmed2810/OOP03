@@ -47,7 +47,7 @@ namespace OOP03
             #endregion
 
             Complex C1 = new Complex(){ Real=6,Imag=4};
-            Complex C2 = new Complex() { Real =6 , Imag =4 };
+            Complex C2 = new Complex() { Real =8 , Imag =10 };
 
             #region Binary Operator
             //Complex C3=default;//null
@@ -78,9 +78,20 @@ namespace OOP03
             //{
             //    Console.WriteLine("C1 is Equal  C2");
             //}
-                 
-            
+
+
             #endregion
+            #region Casting Operator
+            #region Ex01
+            int Y = (int)C1;//Explicit Casting
+            Console.WriteLine(Y);
+            #endregion
+            #region Ex02
+            string s = C1;//implicit Casting
+            Console.WriteLine(s);
+            #endregion
+            #endregion   
+
         }
     }
 }
