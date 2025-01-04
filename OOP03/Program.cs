@@ -1,4 +1,5 @@
-﻿using OOP03.Operators_Overloading;
+﻿using OOP03.Casting_Operator_Overloadig;
+using OOP03.Operators_Overloading;
 using System;
 
 
@@ -90,8 +91,21 @@ namespace OOP03
             string s = C1;//implicit Casting
             Console.WriteLine(s);
             #endregion
-            #endregion   
+            #endregion
+            #region CASTING OPERATOR [NEED IN BUSSINESS]
+            //User user = new User() {
+            //   Id=10,
+            //   Name="Nour",
+            //   Email="Nour@gmail",
+            //   Password="Nour123"};
+            //  UserView userView = (UserView)user;
+            //    Console.WriteLine(userView.Id);
+            //    Console.WriteLine(userView.FName);
+            //    Console.WriteLine(userView.LName);
+            //    Console.WriteLine(userView.Email);
+            //    Console.WriteLine(userView.Password);
 
+            #endregion
         }
     }
 }
