@@ -48,4 +48,21 @@ namespace OOP03.Overriding
             Console.WriteLine($"MyFun02=TypeA:{A},TypeB:{B}");
         }
     }
+    internal class TypeC:TypeB
+    {
+        public int C{ get; set; }
+        public TypeC(int A,int B,int C):base(A,B)
+        {
+           this.C = C;
+
+        }
+        public new void MyFun01()
+        {
+            Console.WriteLine("MyFun01= I am TypeC");
+        }
+        public override void MyFun02()
+        {
+            Console.WriteLine($"MyFun02=TypeA:{A},TypeB:{B},TypeC:{C}");
+        }
+    }
 }

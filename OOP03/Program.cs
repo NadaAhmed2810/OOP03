@@ -142,6 +142,13 @@ namespace OOP03
             //CLR Will Bind Function Call Based on Object 
             //at Run Time
             #endregion
+            #region Child is parent 
+            //TypeA typeA;
+            //typeA = new TypeA(1);
+            //typeA = new TypeC(1,2,3);
+            //TypeB typeB =(TypeB)typeA;//CLR Casting operator  
+            #endregion
+
         }
     }
 }
