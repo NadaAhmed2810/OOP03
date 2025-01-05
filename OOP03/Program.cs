@@ -228,6 +228,38 @@ namespace OOP03
             //};
             //ProcessEmployee(employee01); 
             #endregion
+            #region More Practise in Binding
+            //TypeA typeA = new TypeC(1, 2, 3);
+            //typeA.A = 11;
+            ////typeA.B=22
+            ////typeA.B=33
+            //typeA.MyFun01();
+            //typeA.MyFun02();
+
+            //TypeB typeB = new TypeC(1, 2, 3);
+            //typeB.A = 11;
+            //typeB.B = 22;
+            ////typeB.C=33
+            //typeB.MyFun01();
+            //typeB.MyFun02();
+            ///////////////////////////////////////////////
+            //TypeA typeA=new TypeE(1,2,3,4,5);
+            //typeA.MyFun01();//parent
+            //typeA.MyFun02();//1,2,3
+            //TypeB typeB= new TypeE(1, 2, 3, 4, 5);
+            //typeB.MyFun01();//Child
+            //typeB.MyFun02();//1,2,3
+            //TypeC typeC= new TypeE(1, 2, 3, 4, 5); 
+            //typeC.MyFun01();//GrandChild 
+            //typeC.MyFun02();//1,2,3
+            //TypeD typeD = new TypeE(1, 2, 3, 4, 5); 
+            //typeD.MyFun01();//GreatChild
+            //typeD.MyFun02();//1,2,3,4,5
+           
+
+
+
+            #endregion
 
         }
     }
