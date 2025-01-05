@@ -128,6 +128,20 @@ namespace OOP03
 
 
             #endregion
+            #region What is Binding?
+            //Binding: Is Behavior
+            //1.Static Binding
+            //2.Dynamic Binding اسناد بعتمد ع حد 
+            //Reference from parent refer object from child
+            //TypeA RefBase=new TypeB(1,2);
+            //RefBase.A = 4;
+            //RefBase.MyFun01();//static Binding[early]
+            //Complier Will Bind Function Call Based on Reference not Object 
+            //at Compilation Time[IL]
+            //RefBase.MyFun02();//Dynamic Binding[late]
+            //CLR Will Bind Function Call Based on Object 
+            //at Run Time
+            #endregion
         }
     }
 }
