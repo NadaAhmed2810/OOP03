@@ -2,12 +2,55 @@
 using OOP03.Operators_Overloading;
 using OOP03.Overriding;
 using System;
+using System.Runtime.CompilerServices;
 
 
 namespace OOP03 
 {
+    abstract class Employee
+    {
+        public int Id { get; set; }
+        public string? Name { get; set; }
+        public int? Age { get; set; }
+        public void Fun01()
+        {
+            Console.WriteLine("I am Employee");
+
+        }
+
+        public virtual void Fun02()
+        {
+            Console.WriteLine($"Id:{Id}\nName:{Name}\nAge:{Age}");
+
+        }
+    }
+    class FullTimeEmployee : Employee
+    {
+        public decimal Salary { get; set; }
+        public new void Fun01()
+        {
+            Console.WriteLine("I am a FullTimeEmployee");
+        }
+        public override void Fun02()
+        {
+            Console.WriteLine($"Id:{Id}\nName:{Name}\nAge:{Age}\nSalary:{Salary}");
+        }
+    }
+    class PartTimeEmployee : Employee
+    {
+        public decimal HourRate { get; set; }
+        public new void Fun01()
+        {
+            Console.WriteLine("I am a PartTime Employee");
+        }
+        public override void Fun02()
+        {
+            Console.WriteLine($"Id:{Id}\nName:{Name}\nAge:{Age}\nHourRate:{HourRate}");
+        }
+    }
     internal class Program
     {
+
         #region Overloading
         static int Sum(int x, int y)
         {
@@ -27,6 +70,23 @@ namespace OOP03
         }
 
         #endregion
+          public static void ProcessEmployee(Employee employee)
+        {
+            if(employee is not null)
+            {
+                employee.Fun01();
+                employee.Fun02();
+            }
+        }
+        //this wrong
+        //public static void ProcessEmployee(PartTimeEmployee employee)
+        //{
+        //    if (employee is not null)
+        //    {
+        //        employee.MyFun01();
+        //        employee.Fun02();
+        //    }
+        //}
         static void Main(string[] args)
         {
             #region OOP Paller 3 Polymorphism 1.Overloading
@@ -142,11 +202,31 @@ namespace OOP03
             //CLR Will Bind Function Call Based on Object 
             //at Run Time
             #endregion
-            #region Child is parent 
+            #region Not Binding
             //TypeA typeA;
             //typeA = new TypeA(1);
             //typeA = new TypeC(1,2,3);
             //TypeB typeB =(TypeB)typeA;//CLR Casting operator  
+            #endregion
+            #region Binding Is Behaviour
+            //FullTimeEmployee employee = new FullTimeEmployee()
+            //{
+            //    Name="Noura",
+            //    Id=1,
+            //    Age=20,
+            //    Salary=5000
+
+            //};
+            //ProcessEmployee(employee);
+            //PartTimeEmployee employee01 = new PartTimeEmployee()
+            //{
+            //    Name = "Nour",
+            //    Id = 1,
+            //    Age = 20,
+            //    HourRate = 500
+
+            //};
+            //ProcessEmployee(employee01); 
             #endregion
 
         }
