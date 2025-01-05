@@ -1,5 +1,6 @@
 ﻿using OOP03.Casting_Operator_Overloadig;
 using OOP03.Operators_Overloading;
+using OOP03.Overriding;
 using System;
 
 
@@ -47,10 +48,11 @@ namespace OOP03
 
             #endregion
 
-            Complex C1 = new Complex(){ Real=6,Imag=4};
-            Complex C2 = new Complex() { Real =8 , Imag =10 };
 
             #region Binary Operator
+
+            //Complex C1 = new Complex() { Real = 6, Imag = 4 };
+            //Complex C2 = new Complex() { Real = 8, Imag = 10 };
             //Complex C3=default;//null
             //C3 = C1 + C2;
             //C2 += C1;
@@ -84,12 +86,12 @@ namespace OOP03
             #endregion
             #region Casting Operator
             #region Ex01
-            int Y = (int)C1;//Explicit Casting
-            Console.WriteLine(Y);
-            #endregion
-            #region Ex02
-            string s = C1;//implicit Casting
-            Console.WriteLine(s);
+            //int Y = (int)C1;//Explicit Casting
+            //Console.WriteLine(Y);
+            //#endregion
+            //#region Ex02
+            //string s = C1;//implicit Casting
+            //Console.WriteLine(s);
             #endregion
             #endregion
             #region CASTING OPERATOR [NEED IN BUSSINESS]
@@ -104,6 +106,26 @@ namespace OOP03
             //    Console.WriteLine(userView.LName);
             //    Console.WriteLine(userView.Email);
             //    Console.WriteLine(userView.Password);
+
+            #endregion
+            #region Overriding
+            //TypeA typeA = new TypeA(1);
+            //typeA.A = 5;
+            //typeA.MyFun01();//I am Base [Parent]
+            //typeA.MyFun02();// TypeA:{5}
+            //TypeB typeB =new TypeB(1, 2);
+            //typeB.A = 3;
+            //typeB.B = 4;
+            //typeB.MyFun01();
+            //typeB.MyFun02();
+
+            //static binding 
+            //TypeA typeA = new TypeB(3,4 );
+            //typeA.A = 6;
+            //typeA.MyFun01();
+            //typeA.MyFun02();
+
+
 
             #endregion
         }
