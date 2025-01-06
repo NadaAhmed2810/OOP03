@@ -46,6 +46,15 @@
             //Manager manager = new Manager();
             //manager.Fun();  
             #endregion
+            #region Q5: Create a base class BaseClass with a virtual method DisplayMessage that prints "Message from BaseClass".
+            //BaseClass baseClass = new BaseClass();
+            //baseClass.printMessage(); 
+            //BaseClass derivedClass1 = new DerivedClass01();
+            //derivedClass1.printMessage();  
+            //BaseClass derivedClass2 = new DerivedClass02();
+            //derivedClass2.printMessage();  
+
+            #endregion
             #endregion
         }
     }
