@@ -20,6 +20,25 @@
             //Console.WriteLine();
             //Console.WriteLine(R3);
             #endregion
+            #region Q3:Define a class Complex Number that represents a complex number with real and imaginary parts.
+
+            //ComplexNumber C1 = new ComplexNumber() { Real = 6, Imag = 4 };
+            //ComplexNumber C2 = new ComplexNumber() { Real = 8, Imag = 10 };
+            //ComplexNumber C3 = default;
+            //C3 = C1 + C2;
+            //Console.WriteLine("Addition");
+            //Console.WriteLine($"C1:{C1}");
+            //Console.WriteLine($"C2:{C2}");
+            //Console.WriteLine("---------");
+            //Console.WriteLine($"C3:{C3}");
+            //C3 = C2 - C1;
+            //Console.WriteLine("Subtraction");
+            //Console.WriteLine($"C2:{C2}");
+            //Console.WriteLine($"C1:{C1}");
+           
+            //Console.WriteLine("---------");
+            //Console.WriteLine($"C3:{C3}");
+            #endregion
             #endregion
         }
     }
