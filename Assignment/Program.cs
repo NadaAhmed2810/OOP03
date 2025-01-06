@@ -35,9 +35,16 @@
             //Console.WriteLine("Subtraction");
             //Console.WriteLine($"C2:{C2}");
             //Console.WriteLine($"C1:{C1}");
-           
+
             //Console.WriteLine("---------");
             //Console.WriteLine($"C3:{C3}");
+            #endregion
+            #region Q4:Create a base class named Employee with method Work those prints "Employee is working".
+            //Employees employee = new Employees();
+            //employee.Fun();  
+
+            //Manager manager = new Manager();
+            //manager.Fun();  
             #endregion
             #endregion
         }
